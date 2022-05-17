@@ -11,8 +11,8 @@ map('n', '<leader>r', ':NvimTreeRefresh<CR>', {noremap = true, silent = true})
 map('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true, silent = true})
 map('v', '<', '<gv', {noremap = true, silent = false})
 -- Move to previous/next
-map('n', '<leader>h', ':BufferPrevious<CR>',{noremap = true, silent = false})
-map('n', '<leader>l', ':BufferNext<CR>', {noremap = true, silent = false})
+map('n', '<leader>,', ':BufferPrevious<CR>',{noremap = true, silent = false})
+map('n', '<leader>.', ':BufferNext<CR>', {noremap = true, silent = false})
 -- Re-order to previous/next
 map('n', '<leader>H', ':BufferMovePrevious<CR>', {noremap = true, silent = false})
 map('n', '<leader>L', ':BufferMoveNext<CR>', {noremap = true, silent = false})

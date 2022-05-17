@@ -47,7 +47,7 @@ return require('packer').startup(function()
             terminal_colors = true,
             italic_comments = false,
             enable_treesitter = true,
-            transparent_background = false,
+            transparent_background = true,
             pumblend = {
                 enable = false,
                 transparency_amount = 20,
