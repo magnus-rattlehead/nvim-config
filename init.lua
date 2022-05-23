@@ -50,6 +50,10 @@ require('whichkey-config')
 require('cmp-config')
 require('indent-blankline-config')
 require('colorizer-config')
-require('format-config')
+-- require('format-config')
+require('null-ls-config')
 require('comment-config')
 require('telescope-config')
+vim.g.tokyonight_style = "night"
+vim.g.tokyonight_italic_functions = true
+vim.cmd [[colorscheme tokyonight]]
