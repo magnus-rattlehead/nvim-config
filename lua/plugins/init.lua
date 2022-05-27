@@ -1,10 +1,10 @@
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
+  use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" }
   use {
     'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
+    requires = { 'kyazdani42/nvim-web-devicons' }
   }
   use {
     'nvim-lualine/lualine.nvim',
@@ -23,7 +23,7 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
   use 'onsails/lspkind.nvim'
-  use {'tami5/lspsaga.nvim', config = "require('lspsaga-config')"}
+  use { 'tami5/lspsaga.nvim', config = "require('lspsaga-config')" }
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
@@ -38,41 +38,42 @@ return require('packer').startup(function()
   use 'terrortylor/nvim-comment'
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
---   use({
---     'NTBBloodbath/doom-one.nvim',
---     config = function()
---         require'doom-one'.setup({
---             cursor_coloring = true,
---             terminal_colors = true,
---             italic_comments = false,
---             enable_treesitter = true,
---             transparent_background = false,
---             pumblend = {
---                 enable = false,
---                 transparency_amount = 20,
---             },
---             plugins_integrations = {
---                 neorg = false,
---                 barbar = true,
---                 bufferline = false,
---                 gitgutter = false,
---                 gitsigns = false,
---                 telescope = true,
---                 neogit = false,
---                 nvim_tree = true,
---                 dashboard = false,
---                 startify = false,
---                 whichkey = true,
---                 indent_blankline = true,
---                 vim_illuminate = false,
---                 lspsaga = true,
---             },
---         })
---     end,
--- })
+  --   use({
+  --     'NTBBloodbath/doom-one.nvim',
+  --     config = function()
+  --         require'doom-one'.setup({
+  --             cursor_coloring = true,
+  --             terminal_colors = true,
+  --             italic_comments = false,
+  --             enable_treesitter = true,
+  --             transparent_background = false,
+  --             pumblend = {
+  --                 enable = false,
+  --                 transparency_amount = 20,
+  --             },
+  --             plugins_integrations = {
+  --                 neorg = false,
+  --                 barbar = true,
+  --                 bufferline = false,
+  --                 gitgutter = false,
+  --                 gitsigns = false,
+  --                 telescope = true,
+  --                 neogit = false,
+  --                 nvim_tree = true,
+  --                 dashboard = false,
+  --                 startify = false,
+  --                 whichkey = true,
+  --                 indent_blankline = true,
+  --                 vim_illuminate = false,
+  --                 lspsaga = true,
+  --             },
+  --         })
+  --     end,
+  -- })
   use 'bluz71/vim-moonfly-colors'
   use 'folke/tokyonight.nvim'
+  use 'shaunsingh/nord.nvim'
   use 'williamboman/nvim-lsp-installer'
 end)

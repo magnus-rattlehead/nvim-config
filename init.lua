@@ -11,11 +11,11 @@ vim.o.backup = false
 vim.o.writebackup = false
 vim.o.updatetime = 500
 vim.o.timeoutlen = 100
-vim.o.clipboard="unnamedplus"
+vim.o.clipboard = "unnamedplus"
 vim.o.ignorecase = true
 vim.o.scrolloff = 3
 vim.o.sidescrolloff = 5
-vim.o.mouse=a
+vim.o.mouse = a
 vim.wo.wrap = false
 vim.wo.number = true
 vim.o.cursorline = true
@@ -54,6 +54,8 @@ require('colorizer-config')
 require('null-ls-config')
 require('comment-config')
 require('telescope-config')
-vim.g.tokyonight_style = "night"
-vim.g.tokyonight_italic_functions = true
-vim.cmd [[colorscheme tokyonight]]
+require('nord-config')
+-- vim.g.tokyonight_style = "night"
+-- vim.g.tokyonight_italic_functions = true
+-- vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme nord]]
