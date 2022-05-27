@@ -76,4 +76,5 @@ return require('packer').startup(function()
   use 'folke/tokyonight.nvim'
   use 'shaunsingh/nord.nvim'
   use 'williamboman/nvim-lsp-installer'
+  use 'akinsho/toggleterm.nvim'
 end)

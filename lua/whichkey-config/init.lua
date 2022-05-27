@@ -1,4 +1,9 @@
 local wk = require("which-key")
+local toggle_float = function()
+  local Terminal = require('toggleterm.terminal').Terminal
+  local float = Terminal:new({ direction = "float" })
+  return float:toggle()
+end
 local mappings = {
   q = { ":q<cr>", "Quit" },
   w = { ":w<cr>", "Save" },
@@ -28,25 +33,30 @@ local mappings = {
   },
   b = {
     name = "Barbar",
-    [","] = { '<cmd>BufferPrevious<cr>', "Previous Tab" },
-    ["."] = { '<cmd>BufferNext<cr>', "Next Tab" },
-    ["<"] = { '<cmd>BufferMovePrevious<cr>', "Move Tab Left" },
-    [">"] = { '<cmd>BufferMoveNext<cr>', "Move Tab Right" },
-    ["1"] = { '<cmd>BufferGoto 1<cr>', "Tab 1" },
-    ["2"] = { '<cmd>BufferGoto 2<cr>', "Tab 2" },
-    ["3"] = { '<cmd>BufferGoto 3<cr>', "Tab 3" },
-    ["4"] = { '<cmd>BufferGoto 4<cr>', "Tab 4" },
-    ["5"] = { '<cmd>BufferGoto 5<cr>', "Tab 5" },
-    ["6"] = { '<cmd>BufferGoto 6<cr>', "Tab 6" },
-    ["7"] = { '<cmd>BufferGoto 7<cr>', "Tab 7" },
-    ["8"] = { '<cmd>BufferGoto 8<cr>', "Tab 8" },
-    ["9"] = { '<cmd>BufferGoto 9<cr>', "Tab 9" },
-    ["0"] = { '<cmd>BufferLast<cr>', "Last Tab" },
-    c = { '<cmd>BufferClose<cr>', "Close Tab" },
+    h = { '<cmd>BufferPrevious<cr>', "Go to Previous Tab" },
+    l = { '<cmd>BufferNext<cr>', "Go to Next Tab" },
+    k = { '<cmd>BufferMovePrevious<cr>', "Move Tab to the Left" },
+    j = { '<cmd>BufferMoveNext<cr>', "Move Tab to the Right" },
+    ["1"] = { '<cmd>BufferGoto 1<cr>', "Switch to Tab 1" },
+    ["2"] = { '<cmd>BufferGoto 2<cr>', "Switch to Tab 2" },
+    ["3"] = { '<cmd>BufferGoto 3<cr>', "Switch to Tab 3" },
+    ["4"] = { '<cmd>BufferGoto 4<cr>', "Switch to Tab 4" },
+    ["5"] = { '<cmd>BufferGoto 5<cr>', "Switch to Tab 5" },
+    ["6"] = { '<cmd>BufferGoto 6<cr>', "Switch to Tab 6" },
+    ["7"] = { '<cmd>BufferGoto 7<cr>', "Switch to Tab 7" },
+    ["8"] = { '<cmd>BufferGoto 8<cr>', "Switch to Tab 8" },
+    ["9"] = { '<cmd>BufferGoto 9<cr>', "Switch to Tab 9" },
+    ["0"] = { '<cmd>BufferLast<cr>', "Switch to Last Tab" },
+    c = { '<cmd>BufferClose<cr>', "Close Current Tab" },
   },
   e = { ":NvimTreeToggle<cr>", "Toggle File Tree" },
   r = { ":NvimTreeRefresh<cr>", "Refresh File Tree" },
   n = { ":NvimTreeFindFile<cr>", "Find File in Tree" },
+  t = {
+    name = "Toggle Term",
+    t = { ":ToggleTerm<cr>", "Split Terminal" },
+    f = { toggle_float, "Floating Terminal" },
+  },
 }
 local opts = { prefix = '<leader>' }
 wk.register(mappings, opts)

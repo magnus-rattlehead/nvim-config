@@ -16,3 +16,4 @@ Restart Neovim, enjoy
 - telescope
 - treesitter
 - whichkey
+- ToggleTerm
