@@ -39,8 +39,8 @@ lspsaga.setup { -- defaults ...
   border_style = "single",
   rename_prompt_prefix = "➤",
   rename_output_qflist = {
-    enable = false,
-    auto_open_qflist = false,
+    enable = true,
+    auto_open_qflist = true,
   },
   server_filetype_map = {},
   diagnostic_prefix_format = "%d. ",

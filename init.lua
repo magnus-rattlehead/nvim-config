@@ -56,6 +56,7 @@ require('comment-config')
 require('telescope-config')
 require('nord-config')
 require('toggleterm-config')
+require('gitsigns-config')
 -- vim.g.tokyonight_style = "night"
 -- vim.g.tokyonight_italic_functions = true
 -- vim.cmd [[colorscheme tokyonight]]

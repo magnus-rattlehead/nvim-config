@@ -1,4 +1,5 @@
 return require('packer').startup(function()
+  local use = require('packer').use
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" }
@@ -77,4 +78,11 @@ return require('packer').startup(function()
   use 'shaunsingh/nord.nvim'
   use 'williamboman/nvim-lsp-installer'
   use 'akinsho/toggleterm.nvim'
+  use "folke/lua-dev.nvim"
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
 end)

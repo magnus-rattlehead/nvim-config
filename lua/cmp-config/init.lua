@@ -1,17 +1,17 @@
 -- require('cmp-config/languageservers')
-vim.g.completeopt="menu,menuone,noselect,noinsert"
+vim.g.completeopt = "menu,menuone,noselect,noinsert"
 local has_words_before = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
   return col ~= 0
-             and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s")
-             == nil
+      and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s")
+      == nil
 end
 
 local feedkey = function(key, mode)
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(key, true, true, true), mode, true)
 end
 -- Setup nvim-cmp.
-local cmp = require'cmp'
+local cmp = require 'cmp'
 local lspkind = require('lspkind')
 cmp.setup({
   snippet = {
@@ -81,21 +81,6 @@ cmp.setup.cmdline(':', {
   })
 })
 
--- Setup lspconfig.
--- local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
--- -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
--- require'lspconfig'.html.setup {
---   capabilities = capabilities
--- }
--- require'lspconfig'.cssls.setup {
---   capabilities = capabilities
--- }
--- require'lspconfig'.tsserver.setup {
---   capabilities = capabilities
--- }
--- require'lspconfig'.pylsp.setup {
---   capabilities = capabilities
--- }
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
@@ -103,21 +88,22 @@ for type, icon in pairs(signs) do
 end
 
 local lsp_installer = require('nvim-lsp-installer')
+lsp_installer.setup {
+  ui = {
+    icons = {
+      server_installed = "✓",
+      server_pending = "➜",
+      server_uninstalled = "✗",
+    },
+  }
+}
 
-lsp_installer.on_server_ready(function(server)
-  local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  local opts = {capabilities = capabilities}
-  if server.name == "sumneko_lua" then
-    opts = vim.tbl_deep_extend("force", {
-      settings = {
-        Lua = {
-          runtime = {version = 'LuaJIT', path = vim.split(package.path, ';')},
-          diagnostics = {globals = {'vim'}},
-          workspace = {library = vim.api.nvim_get_runtime_file("", true), checkThirdParty = false},
-          telemetry = {enable = false}
-        }
-      }
-    }, opts)
-  end
-  server:setup(opts)
-end)
+local lspconfig = require("lspconfig")
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.offsetEncoding = { "utf-8" }
+lspconfig.ccls.setup { { capabilities = capabilities } }
+-- For Neovim plugin development only!
+local luadev = require("lua-dev").setup {}
+lspconfig.sumneko_lua.setup(luadev)
+lspconfig.tsserver.setup {}
