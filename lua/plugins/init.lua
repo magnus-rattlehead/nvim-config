@@ -85,4 +85,5 @@ return require('packer').startup(function()
       'nvim-lua/plenary.nvim'
     }
   }
+  use "projekt0n/github-nvim-theme"
 end)

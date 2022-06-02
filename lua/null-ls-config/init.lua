@@ -14,8 +14,8 @@ null_ls.setup({
     }), formatting.isort, formatting.codespell.with({ filetypes = { 'markdown' } })
   },
   on_attach = function(client)
-    if client.resolved_capabilities.document_formatting then
-      vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()")
+    if client.server_capabilities.document_formatting then
+      vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.format()")
     end
     vim.cmd [[
       augroup document_highlight
