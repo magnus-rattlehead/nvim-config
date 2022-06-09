@@ -1,3 +1,3 @@
 require('lualine').setup {
-  options = { theme = 'github_dark_default' },
+  options = { theme = 'github_light_default' },
 }
