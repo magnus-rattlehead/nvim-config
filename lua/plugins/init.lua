@@ -86,4 +86,5 @@ return require('packer').startup(function()
     }
   }
   use "projekt0n/github-nvim-theme"
+  use "github/copilot.vim"
 end)
