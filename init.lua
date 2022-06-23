@@ -60,5 +60,7 @@ require('gitsigns-config')
 -- require('github-theme-config')
 vim.g.tokyonight_style = "storm"
 vim.g.tokyonight_italic_functions = true
+vim.g.tokyonight_lualine_bold = true
+vim.g.italic_comments = false
 vim.cmd [[colorscheme tokyonight]]
 -- vim.cmd [[colorscheme nord]]
