@@ -1,3 +1,4 @@
+-- vim options
 vim.o.hidden = true
 vim.o.pumheight = 20
 vim.o.cmdheight = 2
@@ -13,7 +14,7 @@ vim.o.updatetime = 500
 vim.o.timeoutlen = 100
 vim.o.clipboard = "unnamedplus"
 vim.o.ignorecase = true
-vim.o.scrolloff = 3
+vim.o.scrolloff = 5
 vim.o.sidescrolloff = 5
 vim.o.mouse = a
 vim.wo.wrap = true
@@ -40,6 +41,7 @@ vim.opt.list = true
 vim.cmd [[
 filetype plugin indent on
 ]]
+-- external plugins
 require('plugins')
 require('keybindings')
 require('treesitter-config')
@@ -54,7 +56,6 @@ require('colorizer-config')
 require('null-ls-config')
 require('comment-config')
 require('telescope-config')
-require('nord-config')
 require('toggleterm-config')
 require('gitsigns-config')
 require('knap-config')
@@ -62,3 +63,7 @@ require('nvim-scrollview-config')
 require('material-config')
 require('trouble-config')
 require('hop-config')
+require('spellsitter-config')
+require('nvim-cursorline-config')
+-- require('github-copilot')
+-- require('nvim-dap-config')

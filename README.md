@@ -4,7 +4,7 @@ Restart Neovim, enjoy
 
 # Features
 - AutoPairs
-- Barbar
+- Bufferline
 - Language Server Support + autocompletion
 - colorizer
 - comment.nvim
@@ -17,4 +17,9 @@ Restart Neovim, enjoy
 - treesitter
 - whichkey
 - ToggleTerm
-- Github Copilot
+- Vim Fugitive
+- Knap
+- Trouble
+- Github Copilot (requires node 12.x - 17.x)
+- Nvim Dap (requires configuration)
+- and more...

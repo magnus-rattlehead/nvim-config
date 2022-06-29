@@ -1,3 +1,3 @@
 # TODO
 - Configure nvim-dap
-- Configure hop keybinds
+- Configure fugitive keybinds

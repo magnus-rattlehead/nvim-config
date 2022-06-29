@@ -1,27 +1,18 @@
 local wk = require("which-key")
-local knap_process_once = function()
-  local knap = require('knap')
-  return knap.process_once()
-end
-local knap_close_viewer = function()
-  local knap = require('knap')
-  return knap.close_viewer()
-end
-local knap_toggle_autopreviewing = function()
-  local knap = require('knap')
-  return knap.toggle_autopreviewing()
-end
+local knap = require('knap')
+-- local dap = require('dap')
 local toggle_float = function()
   local Terminal = require('toggleterm.terminal').Terminal
   local float = Terminal:new({ direction = "float" })
   return float:toggle()
 end
 local mappings = {
-  q = { ":q<cr>", "Quit" },
-  w = { ":w<cr>", "Save" },
-  x = { ":Bdelete<cr>", "Close" },
-  f = { ":Telescope find_files<cr>", "Find File(s)" },
-  s = { ":Telescope live_grep<cr>", "Live Grep" },
+  q = { '<cmd>q<cr>', "Quit" },
+  Q = { '<cmd>q!<cr>', "Force Quit" },
+  w = { '<cmd>w<cr>', "Save" },
+  x = { '<cmd>Bdelete<cr>', "Close" },
+  f = { '<cmd>Telescope find_files<cr>', "Find File(s)" },
+  s = { '<cmd>Telescope live_grep<cr>', "Live Grep" },
   l = {
     name = "LSP",
     i = { ":LspInfo<cr>", "Connected Language Servers" },
@@ -69,21 +60,33 @@ local mappings = {
     t = { ":ToggleTerm<cr>", "Split Terminal" },
     f = { toggle_float, "Floating Terminal" },
   },
-  z = {
+  k = {
     name = "Knap",
-    z = { knap_process_once, "Process and refresh document" },
-    x = { knap_close_viewer, "Close viewer" },
-    c = { knap_toggle_autopreviewing, "Toggle autopreviewing" },
+    g = { knap.process_once, "Process and refresh document" },
+    h = { knap.close_viewer, "Close viewer" },
+    j = { knap.toggle_autopreviewing, "Toggle autopreviewing" },
   },
   [","] = { '<cmd>TroubleToggle<cr>', "Toggle Trouble" },
   ["."] = { '<cmd>TroubleRefresh<cr>', "Refresh Trouble" },
   ["/"] = {
     name = "Hop",
+    q = { '<cmd>HopAnywhere', "Hop anywhere" },
     w = { '<cmd>HopWord<cr>', "Hop to a word" },
+    e = { '<cmd>HopPattern<cr>', "Hop to a pattern" },
     a = { '<cmd>HopLineStart<cr>', "Hop to start of a line" },
-    s = { '<cmd>HopLine<cr>', "Hop to a line" },
-    d = { '<cmd>HopChar1<cr>', "Hop to a character" },
-  }
+    z = { '<cmd>HopChar1<cr>', "Hop to a character" },
+    x = { '<cmd>HopChar2<cr>', "Hop to 2 characters" },
+  },
+  -- D = {
+  --   name = "Debug",
+  --   c = { dap.continue, "Continue" },
+  --   a = { dap.step_over, "Step Over" },
+  --   s = { dap.step_into, "Step Into" },
+  --   d = { dap.step_back, "Step Back" },
+  --   f = { dap.step_out, "Step Out" },
+  --   ["dr"] = { dap.repl.open, "Open Repl" },
+  --   ["dl"] = { dap.run_last, "Run Last" },
+  -- },
 }
 local opts = { prefix = '<leader>' }
 wk.register(mappings, opts)

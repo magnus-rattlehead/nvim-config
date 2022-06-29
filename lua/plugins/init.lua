@@ -34,16 +34,12 @@ return require('packer').startup(function()
   }
   use 'lukas-reineke/indent-blankline.nvim'
   use 'norcalli/nvim-colorizer.lua'
-  -- use 'lukas-reineke/lsp-format.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'terrortylor/nvim-comment'
   use {
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  use 'bluz71/vim-moonfly-colors'
-  use 'folke/tokyonight.nvim'
-  use 'shaunsingh/nord.nvim'
   use 'williamboman/nvim-lsp-installer'
   use 'akinsho/toggleterm.nvim'
   use "folke/lua-dev.nvim"
@@ -63,4 +59,7 @@ return require('packer').startup(function()
   use "marko-cerovac/material.nvim"
   use "famiu/bufdelete.nvim"
   use "phaazon/hop.nvim"
+  use "lewis6991/spellsitter.nvim"
+  use "yamatsum/nvim-cursorline"
+  use "tpope/vim-fugitive"
 end)
