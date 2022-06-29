@@ -110,8 +110,11 @@ lsp_installer.setup {
 local lspconfig = require("lspconfig")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.offsetEncoding = { "utf-8" }
-lspconfig.ccls.setup { { capabilities = capabilities } }
+capabilities.offsetEncoding = "utf-8"
+capabilities.textDocument.semanticHighlighting = true
+lspconfig.clangd.setup {
+  capabilities = capabilities,
+}
 -- For Neovim plugin development only!
 local luadev = require("lua-dev").setup {}
 lspconfig.sumneko_lua.setup(luadev)

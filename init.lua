@@ -16,7 +16,7 @@ vim.o.ignorecase = true
 vim.o.scrolloff = 3
 vim.o.sidescrolloff = 5
 vim.o.mouse = a
-vim.wo.wrap = false
+vim.wo.wrap = true
 vim.wo.number = true
 vim.o.cursorline = true
 vim.wo.signcolumn = "yes"
@@ -29,6 +29,7 @@ vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
+vim.bo.textwidth = 80
 vim.opt.listchars = {
   eol = '⤶',
   trail = '✚',
@@ -43,24 +44,20 @@ require('plugins')
 require('keybindings')
 require('treesitter-config')
 require('nvim-tree-config')
-require('barbar-config')
+require('bufferline-config')
 require('lualine-config')
 require('autopairs-config')
 require('whichkey-config')
 require('cmp-config')
 require('indent-blankline-config')
 require('colorizer-config')
--- require('format-config')
 require('null-ls-config')
 require('comment-config')
 require('telescope-config')
 require('nord-config')
 require('toggleterm-config')
 require('gitsigns-config')
--- require('github-theme-config')
-vim.g.tokyonight_style = "storm"
-vim.g.tokyonight_italic_functions = true
-vim.g.tokyonight_lualine_bold = true
-vim.g.italic_comments = false
-vim.cmd [[colorscheme tokyonight]]
--- vim.cmd [[colorscheme nord]]
+require('knap-config')
+require('nvim-scrollview-config')
+require('material-config')
+require('trouble-config')

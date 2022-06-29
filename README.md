@@ -17,3 +17,4 @@ Restart Neovim, enjoy
 - treesitter
 - whichkey
 - ToggleTerm
+- Github Copilot

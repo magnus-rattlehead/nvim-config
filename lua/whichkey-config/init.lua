@@ -1,4 +1,16 @@
 local wk = require("which-key")
+local knap_process_once = function()
+  local knap = require('knap')
+  return knap.process_once()
+end
+local knap_close_viewer = function()
+  local knap = require('knap')
+  return knap.close_viewer()
+end
+local knap_toggle_autopreviewing = function()
+  local knap = require('knap')
+  return knap.toggle_autopreviewing()
+end
 local toggle_float = function()
   local Terminal = require('toggleterm.terminal').Terminal
   local float = Terminal:new({ direction = "float" })
@@ -33,22 +45,20 @@ local mappings = {
     c = { '<cmd>Copilot panel<cr>', "Show Github CoPilot Panel" },
   },
   b = {
-    name = "Barbar",
-    h = { '<cmd>BufferPrevious<cr>', "Go to Previous Tab" },
-    l = { '<cmd>BufferNext<cr>', "Go to Next Tab" },
-    k = { '<cmd>BufferMovePrevious<cr>', "Move Tab to the Left" },
+    name = "Bufferline",
+    h = { '<cmd>BufferLineCyclePrev<cr>', "Go to Previous Tab" },
+    l = { '<cmd>BufferLineCycleNext<cr>', "Go to Next Tab" },
+    k = { '<cmd>BufferMovePrev<cr>', "Move Tab to the Left" },
     j = { '<cmd>BufferMoveNext<cr>', "Move Tab to the Right" },
-    ["1"] = { '<cmd>BufferGoto 1<cr>', "Switch to Tab 1" },
-    ["2"] = { '<cmd>BufferGoto 2<cr>', "Switch to Tab 2" },
-    ["3"] = { '<cmd>BufferGoto 3<cr>', "Switch to Tab 3" },
-    ["4"] = { '<cmd>BufferGoto 4<cr>', "Switch to Tab 4" },
-    ["5"] = { '<cmd>BufferGoto 5<cr>', "Switch to Tab 5" },
-    ["6"] = { '<cmd>BufferGoto 6<cr>', "Switch to Tab 6" },
-    ["7"] = { '<cmd>BufferGoto 7<cr>', "Switch to Tab 7" },
-    ["8"] = { '<cmd>BufferGoto 8<cr>', "Switch to Tab 8" },
-    ["9"] = { '<cmd>BufferGoto 9<cr>', "Switch to Tab 9" },
-    ["0"] = { '<cmd>BufferLast<cr>', "Switch to Last Tab" },
-    c = { '<cmd>BufferClose<cr>', "Close Current Tab" },
+    ["1"] = { '<cmd>BufferLineGotoBuffer 1<cr>', "Switch to Tab 1" },
+    ["2"] = { '<cmd>BufferLineGotoBuffer 2<cr>', "Switch to Tab 2" },
+    ["3"] = { '<cmd>BufferLineGotoBuffer 3<cr>', "Switch to Tab 3" },
+    ["4"] = { '<cmd>BufferLineGotoBuffer 4<cr>', "Switch to Tab 4" },
+    ["5"] = { '<cmd>BufferLineGotoBuffer 5<cr>', "Switch to Tab 5" },
+    ["6"] = { '<cmd>BufferLineGotoBuffer 6<cr>', "Switch to Tab 6" },
+    ["7"] = { '<cmd>BufferLineGotoBuffer 7<cr>', "Switch to Tab 7" },
+    ["8"] = { '<cmd>BufferLineGotoBuffer 8<cr>', "Switch to Tab 8" },
+    ["9"] = { '<cmd>BufferLineGotoBuffer 9<cr>', "Switch to Tab 9" },
   },
   e = { ":NvimTreeToggle<cr>", "Toggle File Tree" },
   r = { ":NvimTreeRefresh<cr>", "Refresh File Tree" },
@@ -58,6 +68,14 @@ local mappings = {
     t = { ":ToggleTerm<cr>", "Split Terminal" },
     f = { toggle_float, "Floating Terminal" },
   },
+  z = {
+    name = "Knap",
+    z = { knap_process_once, "Process and refresh document" },
+    x = { knap_close_viewer, "Close viewer" },
+    c = { knap_toggle_autopreviewing, "Toggle autopreviewing" },
+  },
+  [","] = { '<cmd>TroubleToggle<cr>', "Toggle Trouble" },
+  ["."] = { '<cmd>TroubleRefresh<cr>', "Refresh Trouble" },
 }
 local opts = { prefix = '<leader>' }
 wk.register(mappings, opts)
