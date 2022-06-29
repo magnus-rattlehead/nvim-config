@@ -19,7 +19,7 @@ end
 local mappings = {
   q = { ":q<cr>", "Quit" },
   w = { ":w<cr>", "Save" },
-  x = { ":bdelete<cr>", "Close" },
+  x = { ":Bdelete<cr>", "Close" },
   f = { ":Telescope find_files<cr>", "Find File(s)" },
   s = { ":Telescope live_grep<cr>", "Live Grep" },
   l = {
@@ -50,6 +50,7 @@ local mappings = {
     l = { '<cmd>BufferLineCycleNext<cr>', "Go to Next Tab" },
     k = { '<cmd>BufferMovePrev<cr>', "Move Tab to the Left" },
     j = { '<cmd>BufferMoveNext<cr>', "Move Tab to the Right" },
+    p = { '<cmd>BufferLineTogglePin<cr>', "Pin Current Tab" },
     ["1"] = { '<cmd>BufferLineGotoBuffer 1<cr>', "Switch to Tab 1" },
     ["2"] = { '<cmd>BufferLineGotoBuffer 2<cr>', "Switch to Tab 2" },
     ["3"] = { '<cmd>BufferLineGotoBuffer 3<cr>', "Switch to Tab 3" },
@@ -60,9 +61,9 @@ local mappings = {
     ["8"] = { '<cmd>BufferLineGotoBuffer 8<cr>', "Switch to Tab 8" },
     ["9"] = { '<cmd>BufferLineGotoBuffer 9<cr>', "Switch to Tab 9" },
   },
-  e = { ":NvimTreeToggle<cr>", "Toggle File Tree" },
-  r = { ":NvimTreeRefresh<cr>", "Refresh File Tree" },
-  n = { ":NvimTreeFindFile<cr>", "Find File in Tree" },
+  e = { "<cmd>NvimTreeToggle<cr>", "Toggle File Tree" },
+  r = { "<cmd>NvimTreeRefresh<cr>", "Refresh File Tree" },
+  n = { "<cmd>NvimTreeFindFile<cr>", "Find File in Tree" },
   t = {
     name = "Toggle Term",
     t = { ":ToggleTerm<cr>", "Split Terminal" },
@@ -76,6 +77,13 @@ local mappings = {
   },
   [","] = { '<cmd>TroubleToggle<cr>', "Toggle Trouble" },
   ["."] = { '<cmd>TroubleRefresh<cr>', "Refresh Trouble" },
+  ["/"] = {
+    name = "Hop",
+    w = { '<cmd>HopWord<cr>', "Hop to a word" },
+    a = { '<cmd>HopLineStart<cr>', "Hop to start of a line" },
+    s = { '<cmd>HopLine<cr>', "Hop to a line" },
+    d = { '<cmd>HopChar1<cr>', "Hop to a character" },
+  }
 }
 local opts = { prefix = '<leader>' }
 wk.register(mappings, opts)

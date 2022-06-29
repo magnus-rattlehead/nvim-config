@@ -11,7 +11,12 @@ require("bufferline").setup{
         text_align = "left"
       }
     },
-    separator_style = "slant",
+    separator_style = "thin",
     always_show_bufferline = false,
+    groups = {
+      items = {
+        require("bufferline.groups").builtin.pinned:with({ icon = "" }),
+      }
+    },
   }
 }

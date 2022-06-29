@@ -1,5 +1,5 @@
 vim.o.hidden = true
-vim.o.pumheight = 10
+vim.o.pumheight = 20
 vim.o.cmdheight = 2
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -61,3 +61,4 @@ require('knap-config')
 require('nvim-scrollview-config')
 require('material-config')
 require('trouble-config')
+require('hop-config')
