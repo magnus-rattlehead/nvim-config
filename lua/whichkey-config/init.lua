@@ -1,6 +1,13 @@
 local wk = require("which-key")
 local knap = require('knap')
--- local dap = require('dap')
+local dap = require('dap')
+local dap_python = require('dap-python')
+local set_breakpoint_condition = function ()
+  return dap.set_breakpoint(vim.fn.input('Breakpoint Condition: '))
+end
+local set_breakpoint_log = function ()
+  return dap.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))
+end
 local toggle_float = function()
   local Terminal = require('toggleterm.terminal').Terminal
   local float = Terminal:new({ direction = "float" })
@@ -77,16 +84,25 @@ local mappings = {
     z = { '<cmd>HopChar1<cr>', "Hop to a character" },
     x = { '<cmd>HopChar2<cr>', "Hop to 2 characters" },
   },
-  -- D = {
-  --   name = "Debug",
-  --   c = { dap.continue, "Continue" },
-  --   a = { dap.step_over, "Step Over" },
-  --   s = { dap.step_into, "Step Into" },
-  --   d = { dap.step_back, "Step Back" },
-  --   f = { dap.step_out, "Step Out" },
-  --   ["dr"] = { dap.repl.open, "Open Repl" },
-  --   ["dl"] = { dap.run_last, "Run Last" },
-  -- },
+  D = {
+    name = "Debug",
+    c = { dap.continue, "Continue" },
+    a = { dap.step_over, "Step Over" },
+    s = { dap.step_into, "Step Into" },
+    d = { dap.step_back, "Step Back" },
+    f = { dap.step_out, "Step Out" },
+    b = { dap.toggle_breakpoint, "Toggle Breakpoint" },
+    B = { set_breakpoint_condition, "Set breakpoint with condition" },
+    l = { set_breakpoint_log, "Set breakpoint with log" },
+    r = { dap.repl.open, "Open REPL" },
+    L = { dap.run_last, "Run Last" },
+    p = {
+      Name = "Python",
+      j = { dap_python.test_method, "Test method closest to cursore" },
+      k = { dap_python.test_class, "Test class" },
+      l = { dap_python.debug_selection, "Debug Selection" },
+    },
+  },
 }
 local opts = { prefix = '<leader>' }
 wk.register(mappings, opts)

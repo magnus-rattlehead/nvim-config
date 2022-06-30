@@ -1,3 +1,3 @@
 # TODO
-- Configure nvim-dap
-- Configure fugitive keybinds
+- Add markdown visualizer
+- Complete dependency section of README

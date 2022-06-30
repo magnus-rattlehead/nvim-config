@@ -6,13 +6,14 @@ vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
 
 require"indent_blankline".setup {
-    space_char_blankline = " ",
-    char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-        "IndentBlanklineIndent3",
-        "IndentBlanklineIndent4",
-        "IndentBlanklineIndent5",
-        "IndentBlanklineIndent6",
-    },
+  filetype_exclude = { "dashboard" },
+  space_char_blankline = " ",
+  char_highlight_list = {
+      "IndentBlanklineIndent1",
+      "IndentBlanklineIndent2",
+      "IndentBlanklineIndent3",
+      "IndentBlanklineIndent4",
+      "IndentBlanklineIndent5",
+      "IndentBlanklineIndent6",
+  },
 }

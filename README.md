@@ -1,13 +1,21 @@
-Clone into ~/.config/nvim
-Launch Neovim, run :PackerSync
-Restart Neovim, enjoy
+# My Neovim Config
+## Dependencies
+- TODO
 
-# Features
+## Usage
+- Ensure all dependencies are installed
+- Clone into ~/.config/nvim
+- Check config files, adjust file paths according to your system
+- Launch Neovim, run :PackerSync
+- Restart Neovim, enjoy
+
+## Features
 - AutoPairs
 - Bufferline
 - Language Server Support + autocompletion
 - colorizer
 - comment.nvim
+- Dashboard
 - formatting via null-ls
 - indent-blankline
 - lspsaga

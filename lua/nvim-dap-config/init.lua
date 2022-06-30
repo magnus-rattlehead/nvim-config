@@ -29,3 +29,4 @@ dap.configurations.cpp = {
   },
 }
 dap.configurations.c = dap.configurations.cpp
+require('dap-python').setup('~/.virtualenvs/debugpynvim/bin/python')

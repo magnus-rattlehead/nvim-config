@@ -62,4 +62,6 @@ return require('packer').startup(function()
   use "lewis6991/spellsitter.nvim"
   use "yamatsum/nvim-cursorline"
   use "tpope/vim-fugitive"
+  use "mfussenegger/nvim-dap-python"
+  use "glepnir/dashboard-nvim"
 end)
