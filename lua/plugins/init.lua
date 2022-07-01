@@ -14,6 +14,14 @@ return require('packer').startup(function()
   use 'windwp/nvim-ts-autotag'
   use 'p00f/nvim-ts-rainbow'
   use 'windwp/nvim-autopairs'
+  use {
+    "folke/persistence.nvim",
+    event = "BufReadPre", -- this will only start session saving when an actual file was opened
+    module = "persistence",
+    config = function()
+      require("persistence").setup{}
+    end,
+  }
   use 'folke/which-key.nvim'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -64,4 +72,5 @@ return require('packer').startup(function()
   use "tpope/vim-fugitive"
   use "mfussenegger/nvim-dap-python"
   use "glepnir/dashboard-nvim"
+  use "ellisonleao/glow.nvim"
 end)

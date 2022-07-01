@@ -2,6 +2,7 @@ local wk = require("which-key")
 local knap = require('knap')
 local dap = require('dap')
 local dap_python = require('dap-python')
+
 local set_breakpoint_condition = function ()
   return dap.set_breakpoint(vim.fn.input('Breakpoint Condition: '))
 end
@@ -13,6 +14,7 @@ local toggle_float = function()
   local float = Terminal:new({ direction = "float" })
   return float:toggle()
 end
+
 local mappings = {
   q = { '<cmd>q<cr>', "Quit" },
   Q = { '<cmd>q!<cr>', "Force Quit" },
@@ -22,7 +24,7 @@ local mappings = {
   s = { '<cmd>Telescope live_grep<cr>', "Live Grep" },
   l = {
     name = "LSP",
-    i = { ":LspInfo<cr>", "Connected Language Servers" },
+    i = { "<cmd>LspInfo<cr>", "Connected Language Servers" },
     k = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help" },
     K = { "<cmd>Lspsaga hover_doc<cr>", "Hover Commands" },
     w = { '<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>', "Add Workspace Folder" },
@@ -64,7 +66,7 @@ local mappings = {
   n = { "<cmd>NvimTreeFindFile<cr>", "Find File in Tree" },
   t = {
     name = "Toggle Term",
-    t = { ":ToggleTerm<cr>", "Split Terminal" },
+    t = { "<cmd>ToggleTerm<cr>", "Split Terminal" },
     f = { toggle_float, "Floating Terminal" },
   },
   k = {
@@ -102,6 +104,21 @@ local mappings = {
       k = { dap_python.test_class, "Test class" },
       l = { dap_python.debug_selection, "Debug Selection" },
     },
+  },
+  M = {
+    name = "Markdown",
+    g = { '<cmd>Glow<cr>', "Glow Markdown Preview" },
+  },
+  m = {
+    Name = "Misc",
+    h = { '<cmd>nohl<cr>', "Clear highlighting" },
+    c = { '<cmd>ClangdSwitchSourceHeaderFile<cr>', "Switch between source and header files, when availabe" },
+  },
+  S = {
+    Name = "Session Management",
+    l = { '<cmd>lua require("persistence").load()<cr>', "Load session for current directory" },
+    L = { '<cmd>lua require("persistence).load({ last = true })<cr>', "Load last session" },
+    s = { '<cmd>lua require("persistence").stop()<cr>', "Stop Persistence" },
   },
 }
 local opts = { prefix = '<leader>' }

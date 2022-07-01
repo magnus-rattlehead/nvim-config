@@ -7,9 +7,6 @@ local has_words_before = function()
       == nil
 end
 
-local feedkey = function(key, mode)
-  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(key, true, true, true), mode, true)
-end
 -- Setup nvim-cmp.
 local cmp = require 'cmp'
 local lspkind = require('lspkind')
