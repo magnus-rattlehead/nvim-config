@@ -116,3 +116,11 @@ lspconfig.clangd.setup {
 local luadev = require("lua-dev").setup {}
 lspconfig.sumneko_lua.setup(luadev)
 lspconfig.tsserver.setup {}
+
+-- lsp-signature --
+require("lsp_signature").setup{
+  fix_pos = true,
+  wrap = true,
+  transparency = 50,
+  toggle_key = '<C-e>',
+}

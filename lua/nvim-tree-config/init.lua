@@ -1,18 +1,22 @@
-require 'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
+require 'nvim-tree'.setup {
+  update_cwd = true,
   view = {
-    width = 40,
-    height = 40,
-    hide_root_folder = false,
-    side = "left",
-    preserve_window_proportions = false,
-    number = false,
-    relativenumber = false,
-    signcolumn = "yes",
+    hide_root_folder = true,
+    preserve_window_proportions = true,
     mappings = {
-      custom_only = false,
       list = {
         -- user mappings go here
+        { key = "u", action = "dir_up" },
       },
     },
   },
-} -- END_DEFAULT_OPTS
+  renderer = {
+    indent_markers = {
+      enable = true,
+    }
+  },
+  diagnostics = {
+    enable = true,
+    show_on_dirs = true,
+  },
+}

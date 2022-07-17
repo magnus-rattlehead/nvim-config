@@ -1,12 +1,8 @@
 local db = require('dashboard')
-db.preview_command = 'cat | lolcat -F 0.3'
-db.preview_file_path = '~/.config/nvim/external/header.cat'
-db.preview_file_width = 65
-db.preview_file_height = 15
 db.custom_center = {
   {icon = ' ',
   desc = 'Recently latest session ',
-  shortcut = 'SPC s l',
+  shortcut = 'SPC S l',
   action ='lua require("persistence").load({ last = true })'},
   {icon = ' ',
   desc = 'Find  File ',
@@ -19,5 +15,5 @@ db.custom_center = {
   {icon = '▼ ',
   desc = 'Update Plugins ',
   action = 'PackerSync',
-  shortcut = 'SPC d'},
+  shortcut = 'SPC m d'},
 }

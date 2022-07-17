@@ -14,7 +14,7 @@ vim.o.updatetime = 500
 vim.o.timeoutlen = 100
 vim.o.clipboard = "unnamedplus"
 vim.o.ignorecase = true
-vim.o.scrolloff = 5
+vim.o.scrolloff = 15
 vim.o.sidescrolloff = 5
 vim.o.mouse = a
 vim.wo.wrap = true
@@ -60,7 +60,7 @@ require('toggleterm-config')
 require('gitsigns-config')
 require('knap-config')
 require('nvim-scrollview-config')
-require('material-config')
+require('nightfox-config')
 require('trouble-config')
 require('hop-config')
 require('spellsitter-config')

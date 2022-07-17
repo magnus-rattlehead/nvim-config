@@ -73,4 +73,7 @@ return require('packer').startup(function()
   use "mfussenegger/nvim-dap-python"
   use "glepnir/dashboard-nvim"
   use "ellisonleao/glow.nvim"
+  use "ray-x/lsp_signature.nvim"
+  use "simrat39/symbols-outline.nvim"
+  use "EdenEast/nightfox.nvim"
 end)

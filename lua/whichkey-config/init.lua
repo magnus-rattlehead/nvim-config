@@ -15,6 +15,13 @@ local toggle_float = function()
   return float:toggle()
 end
 
+local fr = function ()
+  return require('custom-functions.find-replace').replace_selection(true, false)
+end
+local frc = function ()
+  return require('custom-functions.find-replace').replace_selection(true, true)
+end
+
 local mappings = {
   q = { '<cmd>q<cr>', "Quit" },
   Q = { '<cmd>q!<cr>', "Force Quit" },
@@ -22,6 +29,8 @@ local mappings = {
   x = { '<cmd>Bdelete<cr>', "Close" },
   f = { '<cmd>Telescope find_files<cr>', "Find File(s)" },
   s = { '<cmd>Telescope live_grep<cr>', "Live Grep" },
+  r = { fr, "Find Replace No Confirm" },
+  R = { frc, "Find Replace Confirm" },
   l = {
     name = "LSP",
     i = { "<cmd>LspInfo<cr>", "Connected Language Servers" },
@@ -37,6 +46,7 @@ local mappings = {
     d = { '<cmd>lua vim.lsp.buf.definition()<cr>', "Go To Definition" },
     D = { '<cmd>lua vim.lsp.buf.declaration()<cr>', "Go To Declaration" },
     r = { '<cmd>lua vim.lsp.buf.references()<cr>', "References" },
+    ["<Tab>"] = { '<cmd>SymbolsOutline<cr>', "Toggle Symbols Outline" },
     R = { '<cmd>Lspsaga rename<cr>', "Rename" },
     a = { '<cmd>Lspsaga code_action<cr>', "Code Action" },
     e = { '<cmd>Lspsaga show_line_diagnostics<cr>', "Show Line Diagnostics" },
@@ -48,8 +58,8 @@ local mappings = {
     name = "Bufferline",
     h = { '<cmd>BufferLineCyclePrev<cr>', "Go to Previous Tab" },
     l = { '<cmd>BufferLineCycleNext<cr>', "Go to Next Tab" },
-    k = { '<cmd>BufferMovePrev<cr>', "Move Tab to the Left" },
-    j = { '<cmd>BufferMoveNext<cr>', "Move Tab to the Right" },
+    k = { '<cmd>BufferLineMovePrev<cr>', "Move Tab to the Left" },
+    j = { '<cmd>BufferLineMoveNext<cr>', "Move Tab to the Right" },
     p = { '<cmd>BufferLineTogglePin<cr>', "Pin Current Tab" },
     ["1"] = { '<cmd>BufferLineGotoBuffer 1<cr>', "Switch to Tab 1" },
     ["2"] = { '<cmd>BufferLineGotoBuffer 2<cr>', "Switch to Tab 2" },
@@ -62,7 +72,7 @@ local mappings = {
     ["9"] = { '<cmd>BufferLineGotoBuffer 9<cr>', "Switch to Tab 9" },
   },
   e = { "<cmd>NvimTreeToggle<cr>", "Toggle File Tree" },
-  r = { "<cmd>NvimTreeRefresh<cr>", "Refresh File Tree" },
+  E = { "<cmd>NvimTreeRefresh<cr>", "Refresh File Tree" },
   n = { "<cmd>NvimTreeFindFile<cr>", "Find File in Tree" },
   t = {
     name = "Toggle Term",
@@ -77,15 +87,15 @@ local mappings = {
   },
   [","] = { '<cmd>TroubleToggle<cr>', "Toggle Trouble" },
   ["."] = { '<cmd>TroubleRefresh<cr>', "Refresh Trouble" },
-  ["/"] = {
-    name = "Hop",
-    q = { '<cmd>HopAnywhere', "Hop anywhere" },
-    w = { '<cmd>HopWord<cr>', "Hop to a word" },
-    e = { '<cmd>HopPattern<cr>', "Hop to a pattern" },
-    a = { '<cmd>HopLineStart<cr>', "Hop to start of a line" },
-    z = { '<cmd>HopChar1<cr>', "Hop to a character" },
-    x = { '<cmd>HopChar2<cr>', "Hop to 2 characters" },
-  },
+  -- ["/"] = {
+  --   name = "Hop",
+  --   q = { '<cmd>HopAnywhere<cr>', "Hop anywhere" },
+  --   w = { '<cmd>HopWord<cr>', "Hop to a word" },
+  --   e = { '<cmd>HopPattern<cr>', "Hop to a pattern" },
+  --   a = { '<cmd>HopLineStart<cr>', "Hop to start of a line" },
+  --   z = { '<cmd>HopChar1<cr>', "Hop to a character" },
+  --   x = { '<cmd>HopChar2<cr>', "Hop to 2 characters" },
+  -- },
   D = {
     name = "Debug",
     c = { dap.continue, "Continue" },
@@ -111,8 +121,8 @@ local mappings = {
   },
   m = {
     Name = "Misc",
-    h = { '<cmd>nohl<cr>', "Clear highlighting" },
     c = { '<cmd>ClangdSwitchSourceHeaderFile<cr>', "Switch between source and header files, when availabe" },
+    d = { '<cmd>PackerSync<cr>', "Run PackerSync" },
   },
   S = {
     Name = "Session Management",
