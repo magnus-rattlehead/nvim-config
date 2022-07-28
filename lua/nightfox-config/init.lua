@@ -5,19 +5,19 @@ require('nightfox').setup({
     compile_path = vim.fn.stdpath("cache") .. "/nightfox",
     compile_file_suffix = "_compiled", -- Compiled file suffix
     transparent = false,    -- Disable setting background
-    terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
+    terminal_colors = false, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
     dim_inactive = false,   -- Non focused panes set to alternative background
     styles = {              -- Style to be applied to different syntax groups
       comments = "italic",    -- Value is any valid attr-list value `:help attr-list`
       conditionals = "NONE",
-      constants = "standout",
-      functions = "underline",
-      keywords = "bold",
+      constants = "NONE",
+      functions = "NONE",
+      keywords = "NONE",
       numbers = "NONE",
       operators = "NONE",
       strings = "italic",
-      types = "bold",
-      variables = "NONE",
+      types = "NONE",
+      variables = "bold",
     },
     inverse = {             -- Inverse highlight for different types
       match_paren = true,
@@ -44,4 +44,4 @@ require('nightfox').setup({
 })
 
 -- setup must be called before loading
-vim.cmd("colorscheme dawnfox")
+vim.cmd("colorscheme nightfox")

@@ -10,7 +10,7 @@ if not use_custom then
     extensions = { 'toggleterm', 'nvim-tree', 'symbols-outline' },
   }
 else
-  local palette = require('nightfox.palette').load('dawnfox')
+  local palette = require('nightfox.palette').load('nightfox')
   local Color = require('nightfox.lib.color')
   local colors = {
     bg       = palette.bg2,

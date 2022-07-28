@@ -115,7 +115,10 @@ lspconfig.clangd.setup {
 -- For Neovim plugin development only!
 local luadev = require("lua-dev").setup {}
 lspconfig.sumneko_lua.setup(luadev)
+-- typescript
 lspconfig.tsserver.setup {}
+-- LaTeX
+lspconfig.texlab.setup {}
 
 -- lsp-signature --
 require("lsp_signature").setup{

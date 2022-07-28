@@ -57,7 +57,6 @@ return require('packer').startup(function()
       'nvim-lua/plenary.nvim'
     }
   }
-  use "projekt0n/github-nvim-theme"
   use "github/copilot.vim"
   use "psliwka/vim-smoothie"
   use "dstein64/nvim-scrollview"
