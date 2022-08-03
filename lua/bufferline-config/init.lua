@@ -11,7 +11,7 @@ require("bufferline").setup{
         text_align = "left"
       }
     },
-    separator_style = "thin",
+    separator_style = { '', '' },
     always_show_bufferline = false,
     groups = {
       items = {
