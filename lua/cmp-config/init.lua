@@ -113,13 +113,13 @@ lspconfig.clangd.setup {
   capabilities = capabilities,
 }
 -- For Neovim plugin development only!
-local luadev = require("lua-dev").setup {}
-lspconfig.sumneko_lua.setup(luadev)
+require("neodev").setup({
+  -- add any options here, or leave empty to use the default settings
+})
 -- typescript
 lspconfig.tsserver.setup {}
 -- LaTeX
 lspconfig.texlab.setup {}
-
 -- lsp-signature --
 require("lsp_signature").setup{
   fix_pos = true,

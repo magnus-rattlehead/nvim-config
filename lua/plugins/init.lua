@@ -75,4 +75,6 @@ return require('packer').startup(function()
   use "ray-x/lsp_signature.nvim"
   use "simrat39/symbols-outline.nvim"
   use "EdenEast/nightfox.nvim"
+  use { "mfussenegger/nvim-jdtls", ft = { "java" } }
+  use "folke/neodev.nvim"
 end)

@@ -1,4 +1,3 @@
-local wk = require("which-key")
 local knap = require('knap')
 local dap = require('dap')
 local dap_python = require('dap-python')
@@ -87,15 +86,15 @@ local mappings = {
   },
   [","] = { '<cmd>TroubleToggle<cr>', "Toggle Trouble" },
   ["."] = { '<cmd>TroubleRefresh<cr>', "Refresh Trouble" },
-  -- ["/"] = {
-  --   name = "Hop",
-  --   q = { '<cmd>HopAnywhere<cr>', "Hop anywhere" },
-  --   w = { '<cmd>HopWord<cr>', "Hop to a word" },
-  --   e = { '<cmd>HopPattern<cr>', "Hop to a pattern" },
-  --   a = { '<cmd>HopLineStart<cr>', "Hop to start of a line" },
-  --   z = { '<cmd>HopChar1<cr>', "Hop to a character" },
-  --   x = { '<cmd>HopChar2<cr>', "Hop to 2 characters" },
-  -- },
+  ["/"] = {
+    name = "Hop",
+    q = { '<cmd>HopAnywhere<cr>', "Hop anywhere" },
+    w = { '<cmd>HopWord<cr>', "Hop to a word" },
+    e = { '<cmd>HopPattern<cr>', "Hop to a pattern" },
+    a = { '<cmd>HopLineStart<cr>', "Hop to start of a line" },
+    z = { '<cmd>HopChar1<cr>', "Hop to a character" },
+    x = { '<cmd>HopChar2<cr>', "Hop to 2 characters" },
+  },
   D = {
     name = "Debug",
     c = { dap.continue, "Continue" },
@@ -113,6 +112,14 @@ local mappings = {
       j = { dap_python.test_method, "Test method closest to cursore" },
       k = { dap_python.test_class, "Test class" },
       l = { dap_python.debug_selection, "Debug Selection" },
+    },
+    j = {
+      Name = "Java",
+      o = { "<cmd>lua require'jdtls'.organize_imports()<cr>", "Organize Imports" },
+      v = { "<cmd>lua require('jdtls').extract_variable()<cr>", "Extract Variable" },
+      c = { "<cmd>lua require('jdtls').extract_constant()<cr>", "Extract Constant" },
+      t = { "<cmd>lua require('jdtls').test_class()<cr>", "Test Class" },
+      n = { "<cmd>lua require('jdtls').test_nearest_method()<cr>", "Test Nearest Method" },
     },
   },
   M = {
