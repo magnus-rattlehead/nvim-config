@@ -62,8 +62,16 @@ local config = {
     workspace_dir,
   },
 
-  on_attach = require("config.lsp").on_attach,
-  capabilities = require("config.lsp").capabilities,
+  on_attach = function()
+    for _, client in ipairs(vim.lsp.buf_get_clients()) do
+      if client.name == "jdt.ls" then
+        require("jdtls").setup_dap { hotcodereplace = "auto" }
+        require("jdtls.dap").setup_dap_main_class_configs()
+        vim.lsp.codelens.refresh()
+      end
+    end
+  end,
+  capabilities = vim.lsp.protocol.make_client_capabilities(),
   root_dir = root_dir,
 
   -- Here you can configure eclipse.jdt.ls specific settings

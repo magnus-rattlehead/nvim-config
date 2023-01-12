@@ -30,6 +30,4 @@ dap.configurations.cpp = {
 }
 dap.configurations.c = dap.configurations.cpp
 require('dap-python').setup('~/.virtualenvs/debugpynvim/bin/python')
-require("jdtls").setup_dap { hotcodereplace = "auto" }
-require("jdtls.dap").setup_dap_main_class_configs()
 vim.lsp.codelens.refresh()

@@ -1,3 +1,4 @@
+local wk = require('which-key')
 local knap = require('knap')
 local dap = require('dap')
 local dap_python = require('dap-python')
