@@ -48,7 +48,8 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  use 'williamboman/nvim-lsp-installer'
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
   use 'akinsho/toggleterm.nvim'
   use "folke/lua-dev.nvim"
   use {
@@ -75,6 +76,6 @@ return require('packer').startup(function()
   use "ray-x/lsp_signature.nvim"
   use "simrat39/symbols-outline.nvim"
   use "EdenEast/nightfox.nvim"
-  use { "mfussenegger/nvim-jdtls", ft = { "java" } }
+  use { "mfussenegger/nvim-jdtls" }
   use "folke/neodev.nvim"
 end)

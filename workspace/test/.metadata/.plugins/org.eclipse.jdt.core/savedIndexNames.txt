@@ -1,0 +1,5 @@
+INDEX VERSION 1.132+/home/stivi/nvim-config/workspace/test/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+1826190912.index
+4250082328.index
+3842426239.index

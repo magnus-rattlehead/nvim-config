@@ -1,0 +1,348 @@
+!SESSION 2023-01-23 13:59:48.293 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Gentoo
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/stivi/.config/nvim/workspace/nvim-config
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.684
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.848
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.891
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.892
+!MESSAGE Initializing Java Language Server 1.19.0.202301171536
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.900
+!MESSAGE Installed reference:file:/home/stivi/.local/share/nvim/mason/packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-0.43.0.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.944
+!MESSAGE Started reference:file:/home/stivi/.local/share/nvim/mason/packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-0.43.0.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.978
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.978
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.979
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.979
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.984
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 13:59:50.984
+!MESSAGE Started org.eclipse.m2e.core 1ms
+!SESSION 2023-01-23 14:07:29.683 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Gentoo
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/stivi/.config/nvim/workspace/nvim-config
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.414
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.531
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.550
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.551
+!MESSAGE Initializing Java Language Server 1.19.0.202301171536
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.567
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.567
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.567
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.567
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.570
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.570
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.947
+!MESSAGE ProjectRegistryRefreshJob finished 377ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.947
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.964
+!MESSAGE Started org.eclipse.buildship.core 16ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.976
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.981
+!MESSAGE RepositoryRegistryUpdateJob finished 10ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:30.991
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.043
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.299
+!MESSAGE Importing Eclipse project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.320
+!MESSAGE Workspace initialized in 348ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.351
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.352
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.375
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.377
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, eclipse={downloadSources=true}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}, maven={downloadSources=true}, signatureHelp={enabled=true}, configuration={updateBuildConfiguration=interactive}, format={settings={url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml, profile=GoogleStyle}}, contentProvider={preferred=fernflower}, references={includeDecompiledSources=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useJava7Objects=false, useInstanceof=true}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.377
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.378
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, eclipse={downloadSources=true}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}, maven={downloadSources=true}, signatureHelp={enabled=true}, configuration={updateBuildConfiguration=interactive}, format={settings={url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml, profile=GoogleStyle}}, contentProvider={preferred=fernflower}, references={includeDecompiledSources=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useJava7Objects=false, useInstanceof=true}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.515
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.516
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.517
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-01-23 14:07:31.518
+!MESSAGE Command _java.reloadBundles.command not supported on client
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:07:31.848
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:11:49.042
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:11:49.045
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:11:49.060
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:11:49.064
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2023-01-23 14:11:59.709 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Gentoo
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/stivi/.config/nvim/workspace/nvim-config
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.497
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.598
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.617
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.618
+!MESSAGE Initializing Java Language Server 1.19.0.202301171536
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.633
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.633
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.633
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.633
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.636
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:00.636
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.022
+!MESSAGE ProjectRegistryRefreshJob finished 386ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.023
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.039
+!MESSAGE Started org.eclipse.buildship.core 16ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.058
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.059
+!MESSAGE RepositoryRegistryUpdateJob finished 10ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.342
+!MESSAGE Workspace initialized in 294ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.362
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.363
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.385
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.387
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={contentProvider={preferred=fernflower}, signatureHelp={enabled=true}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, eclipse={downloadSources=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useJava7Objects=false, useInstanceof=true}}, maven={downloadSources=true}, configuration={updateBuildConfiguration=interactive}, implementationsCodeLens={enabled=true}, references={includeDecompiledSources=true}, referencesCodeLens={enabled=true}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.388
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.389
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={contentProvider={preferred=fernflower}, signatureHelp={enabled=true}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, eclipse={downloadSources=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useJava7Objects=false, useInstanceof=true}}, maven={downloadSources=true}, configuration={updateBuildConfiguration=interactive}, implementationsCodeLens={enabled=true}, references={includeDecompiledSources=true}, referencesCodeLens={enabled=true}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.525
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.528
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.529
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-01-23 14:12:01.531
+!MESSAGE Command _java.reloadBundles.command not supported on client
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:01.532
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:15.146
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:15.149
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:15.165
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:15.169
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2023-01-23 14:12:19.247 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Gentoo
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/stivi/.config/nvim/workspace/nvim-config
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.045
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.125
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.144
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.145
+!MESSAGE Initializing Java Language Server 1.19.0.202301171536
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.161
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.161
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.161
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.162
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.164
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.164
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.501
+!MESSAGE ProjectRegistryRefreshJob finished 336ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.501
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.522
+!MESSAGE Started org.eclipse.buildship.core 20ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.534
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.540
+!MESSAGE RepositoryRegistryUpdateJob finished 10ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.827
+!MESSAGE Workspace initialized in 297ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.839
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.840
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.866
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.869
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={maven={downloadSources=true}, format={settings={url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml, profile=GoogleStyle}}, contentProvider={preferred=fernflower}, signatureHelp={enabled=true}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, eclipse={downloadSources=true}, references={includeDecompiledSources=true}, configuration={updateBuildConfiguration=interactive}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=true}, useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.869
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.870
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={maven={downloadSources=true}, format={settings={url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml, profile=GoogleStyle}}, contentProvider={preferred=fernflower}, signatureHelp={enabled=true}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, eclipse={downloadSources=true}, references={includeDecompiledSources=true}, configuration={updateBuildConfiguration=interactive}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=true}, useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.982
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.986
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.986
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-01-23 14:12:20.989
+!MESSAGE Command _java.reloadBundles.command not supported on client
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:12:20.991
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:14:17.608
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:14:17.611
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:14:17.633
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:14:17.637
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
