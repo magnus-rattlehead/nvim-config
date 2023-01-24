@@ -1756,3 +1756,1359 @@ Command-line arguments:  -data /home/stivi/.config/nvim/workspace/test
 
 !ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:18:08.771
 !MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2023-01-23 14:24:22.483 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Gentoo
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/stivi/.config/nvim/workspace/test
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.067
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.230
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.275
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.276
+!MESSAGE Initializing Java Language Server 1.19.0.202301171536
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.311
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.312
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.312
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.312
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.316
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:24.317
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:25.411
+!MESSAGE ProjectRegistryRefreshJob finished 1093ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:25.411
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:25.474
+!MESSAGE Started org.eclipse.buildship.core 62ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:25.488
+!MESSAGE RepositoryRegistryUpdateJob finished 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:25.525
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.176
+!MESSAGE Workspace initialized in 689ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.212
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.213
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.260
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.275
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.275
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.304
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.310
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={maven={downloadSources=true}, configuration={updateBuildConfiguration=interactive}, sources={organizeImports={starThreshold=9999.0, staticStarThreshold=9999.0}}, references={includeDecompiledSources=true}, contentProvider={preferred=fernflower}, signatureHelp={enabled=true}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, eclipse={downloadSources=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useJava7Objects=false, useInstanceof=true}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.312
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.325
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={maven={downloadSources=true}, configuration={updateBuildConfiguration=interactive}, sources={organizeImports={starThreshold=9999.0, staticStarThreshold=9999.0}}, references={includeDecompiledSources=true}, contentProvider={preferred=fernflower}, signatureHelp={enabled=true}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, eclipse={downloadSources=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useJava7Objects=false, useInstanceof=true}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.328
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.780
+!MESSAGE >> workspace/executeCommand vscode.java.resolveMainClass
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.783
+!MESSAGE >> document/didChange
+
+!ENTRY java-debug 1 0 2023-01-23 14:24:26.802
+!MESSAGE Starting com.microsoft.java.debug.plugin
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-01-23 14:24:26.810
+!MESSAGE Command _java.reloadBundles.command not supported on client
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.815
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.845
+!MESSAGE Reconciled 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.898
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.899
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.901
+!MESSAGE Validated 1. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:26.931
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:27.791
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:27.833
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.250
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.250
+!MESSAGE 2 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.250
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.319
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.456
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.544
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.566
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.693
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:28.761
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:29.144
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:29.173
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:29.173
+!MESSAGE 2 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:29.174
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:30.666
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:30.733
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:30.823
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:30.892
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:30.972
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:30.994
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:31.121
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:31.147
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:31.270
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:31.333
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:31.742
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:31.742
+!MESSAGE 0 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:31.743
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:31.756
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.058
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.100
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.260
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.275
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.567
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.633
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.717
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.781
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.801
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.867
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.882
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:32.947
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.025
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.090
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.135
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.200
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.249
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.302
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.399
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.464
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.910
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.921
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.921
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.922
+!MESSAGE Validated 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.932
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:33.997
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.127
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.191
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.276
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.348
+!MESSAGE Reconciled 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.382
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.447
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.530
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.568
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.650
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.670
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.866
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:34.930
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:35.086
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:35.150
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:35.162
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:35.227
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:35.602
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:35.688
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:35.689
+!MESSAGE 0 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:35.690
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:36.275
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:36.340
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:36.426
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:36.489
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:36.796
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:36.955
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:36.956
+!MESSAGE 0 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:36.956
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:51.659
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:51.673
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:51.808
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:51.825
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:52.284
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:52.284
+!MESSAGE 0 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:52.285
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:52.898
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:52.961
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.368
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.368
+!MESSAGE 0 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.368
+!MESSAGE Validated 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.644
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.647
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.689
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.707
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.793
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.814
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.942
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:53.966
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.091
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.157
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.240
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.304
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.338
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.340
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.341
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.402
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.830
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.832
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.845
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:54.908
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.123
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.125
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.164
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.187
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.286
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.352
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.581
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.595
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.731
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:55.795
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.204
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.204
+!MESSAGE 2 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.205
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.261
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.326
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.775
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.784
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.784
+!MESSAGE 2 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:56.785
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:57.739
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:57.742
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:57.747
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:57.804
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:57.986
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:57.988
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:57.992
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.000
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.138
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.153
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.286
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.300
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.435
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.499
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.584
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.649
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:58.988
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:59.104
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:59.104
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:24:59.105
+!MESSAGE Validated 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:25:02.537
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:25:44.290
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:25:44.298
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:25:44.345
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:25:44.354
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2023-01-23 14:36:50.479 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Gentoo
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/stivi/.config/nvim/workspace/test
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.278
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.381
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.403
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.404
+!MESSAGE Initializing Java Language Server 1.19.0.202301171536
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.424
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.424
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.424
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.425
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.427
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.427
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.868
+!MESSAGE ProjectRegistryRefreshJob finished 440ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.868
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.885
+!MESSAGE Started org.eclipse.buildship.core 17ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.900
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:51.915
+!MESSAGE RepositoryRegistryUpdateJob finished 21ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.233
+!MESSAGE Workspace initialized in 339ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.246
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.247
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.269
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.271
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={signatureHelp={enabled=true}, maven={downloadSources=true}, references={includeDecompiledSources=true}, sources={organizeImports={starThreshold=9999.0, staticStarThreshold=9999.0}}, contentProvider={preferred=fernflower}, configuration={updateBuildConfiguration=interactive}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, eclipse={downloadSources=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useJava7Objects=false, useInstanceof=true}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.271
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.273
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={signatureHelp={enabled=true}, maven={downloadSources=true}, references={includeDecompiledSources=true}, sources={organizeImports={starThreshold=9999.0, staticStarThreshold=9999.0}}, contentProvider={preferred=fernflower}, configuration={updateBuildConfiguration=interactive}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, eclipse={downloadSources=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useJava7Objects=false, useInstanceof=true}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.274
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.505
+!MESSAGE >> workspace/executeCommand vscode.java.resolveMainClass
+
+!ENTRY java-debug 1 0 2023-01-23 14:36:52.510
+!MESSAGE Starting com.microsoft.java.debug.plugin
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.513
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.538
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.538
+!MESSAGE 0 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.541
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.553
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.556
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.556
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:52.557
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-01-23 14:36:52.558
+!MESSAGE Command _java.reloadBundles.command not supported on client
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.035
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.099
+!MESSAGE Reconciled 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.142
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.203
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.582
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.670
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.671
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.672
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.720
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.780
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.869
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.930
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:53.978
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.038
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.128
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.188
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.456
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.516
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.605
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.618
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.754
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.770
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.904
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:54.962
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.010
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.070
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.333
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.392
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.549
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.611
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.717
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.758
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.866
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:55.877
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.298
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.338
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.338
+!MESSAGE 2 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.338
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.474
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.483
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.927
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.927
+!MESSAGE 2 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.928
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:56.961
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:57.020
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:57.124
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:57.182
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:57.634
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:57.641
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:57.641
+!MESSAGE 2 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:36:57.641
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:01.017
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:01.076
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:01.483
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:01.484
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:01.484
+!MESSAGE Validated 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:01.527
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:04.353
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:52.852
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:37:55.084
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:39:44.752
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:39:45.898
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:39:45.901
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:39:45.916
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:39:45.920
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2023-01-23 14:44:49.119 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Gentoo
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/stivi/.config/nvim/workspace/test
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.001
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.107
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.129
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.131
+!MESSAGE Initializing Java Language Server 1.19.0.202301171536
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.151
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.151
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.152
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.152
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.155
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.156
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.621
+!MESSAGE ProjectRegistryRefreshJob finished 465ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.622
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.636
+!MESSAGE Started org.eclipse.buildship.core 14ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.647
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.653
+!MESSAGE RepositoryRegistryUpdateJob finished 11ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.954
+!MESSAGE Workspace initialized in 312ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.972
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.974
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:50.998
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.001
+!MESSAGE >> New configuration: {java={codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useInstanceof=true, useJava7Objects=false}}, references={includeDecompiledSources=true}, contentProvider={preferred=fernflower}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}, configuration={updateBuildConfiguration=interactive}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, referencesCodeLens={enabled=true}, maven={downloadSources=true}, implementationsCodeLens={enabled=true}, signatureHelp={enabled=true}, eclipse={downloadSources=true}}, java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.001
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.003
+!MESSAGE >> New configuration: {java={codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useInstanceof=true, useJava7Objects=false}}, references={includeDecompiledSources=true}, contentProvider={preferred=fernflower}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}, configuration={updateBuildConfiguration=interactive}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, referencesCodeLens={enabled=true}, maven={downloadSources=true}, implementationsCodeLens={enabled=true}, signatureHelp={enabled=true}, eclipse={downloadSources=true}}, java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.004
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.400
+!MESSAGE >> workspace/executeCommand vscode.java.resolveMainClass
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.402
+!MESSAGE >> document/didChange
+
+!ENTRY java-debug 1 0 2023-01-23 14:44:51.405
+!MESSAGE Starting com.microsoft.java.debug.plugin
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.407
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.416
+!MESSAGE Reconciled 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.418
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.420
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.421
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.430
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.465
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.466
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.468
+!MESSAGE Validated 1. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.480
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.482
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.482
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-01-23 14:44:51.484
+!MESSAGE Command _java.reloadBundles.command not supported on client
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.488
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.521
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.581
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.671
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.732
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.820
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:51.881
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:52.002
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:52.063
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:52.150
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:52.210
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:52.299
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:52.360
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:52.636
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:52.696
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:53.149
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:53.160
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:53.160
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:53.160
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:44:57.049
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:46:38.433
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:46:39.827
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:46:39.831
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:46:39.855
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:46:39.862
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2023-01-23 14:48:55.175 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Gentoo
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/stivi/.config/nvim/workspace/test
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.084
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.200
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.224
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.226
+!MESSAGE Initializing Java Language Server 1.19.0.202301171536
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.249
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.250
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.250
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.250
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.254
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.254
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.787
+!MESSAGE ProjectRegistryRefreshJob finished 531ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.787
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.800
+!MESSAGE Started org.eclipse.buildship.core 13ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.811
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:56.816
+!MESSAGE RepositoryRegistryUpdateJob finished 10ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.084
+!MESSAGE Workspace initialized in 278ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.106
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.107
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.131
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.134
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={codeGeneration={toString={codeStyle=STRING_BUILDER_CHAINED}, useBlocks=true}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}, contentProvider={preferred=fernflower}, configuration={updateBuildConfiguration=interactive}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, signatureHelp={enabled=true}, references={includeDecompiledSources=true}, maven={downloadSources=true}, eclipse={downloadSources=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.134
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.136
+!MESSAGE >> New configuration: {java.settings.url=/home/stivi/.config/nvim/rule/settings.prefs, java={codeGeneration={toString={codeStyle=STRING_BUILDER_CHAINED}, useBlocks=true}, sources={organizeImports={staticStarThreshold=9999.0, starThreshold=9999.0}}, contentProvider={preferred=fernflower}, configuration={updateBuildConfiguration=interactive}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, format={settings={profile=GoogleStyle, url=/home/stivi/.config/nvim/rule/eclipse-java-google-style.xml}}, signatureHelp={enabled=true}, references={includeDecompiledSources=true}, maven={downloadSources=true}, eclipse={downloadSources=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.136
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.503
+!MESSAGE >> workspace/executeCommand vscode.java.resolveMainClass
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.505
+!MESSAGE >> document/didChange
+
+!ENTRY java-debug 1 0 2023-01-23 14:48:57.508
+!MESSAGE Starting com.microsoft.java.debug.plugin
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.510
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.513
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.514
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.517
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.524
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.545
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.545
+!MESSAGE 2 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.548
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.563
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.565
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.565
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.565
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.566
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-01-23 14:48:57.568
+!MESSAGE Command _java.reloadBundles.command not supported on client
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.625
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.715
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.774
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.864
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:57.924
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:58.146
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:58.204
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:58.618
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:58.619
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:58.619
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:48:58.666
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:17.528
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:18.437
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:18.440
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:18.495
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:18.495
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:18.947
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:18.957
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:18.958
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:18.958
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.201
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.204
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.208
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.260
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.372
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.431
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.618
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.647
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.897
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:19.955
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.204
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.263
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.354
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.413
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.506
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.514
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.924
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.925
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.925
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:20.965
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 14:50:22.314
+!MESSAGE >> document/signatureHelp
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 19:39:14.016
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 19:39:14.018
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 19:39:14.032
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-01-23 19:39:14.036
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:

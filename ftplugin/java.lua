@@ -9,6 +9,17 @@ local java_format_style_rule = rule_dir..'eclipse-java-google-style.xml'
 local java_debug_jar = fn.stdpath('data')..'/mason/packages/java-debug-adapter/extension/server/*.jar'
 local workspace_root_dir = nvim_dir..'/workspace/'
 local workspace_dir = workspace_root_dir..project_name
+local jdtls_path = vim.fn.stdpath('data') .. '/mason/packages/jdtls'
+local jdtls_plugins_path = jdtls_path .. '/plugins/'
+local equinox_jar = jdtls_plugins_path .. 'org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar'
+local lombok_jar = jdtls_path .. '/lombok.jar'
+if vim.fn.has("mac") == 1 then
+  CONFIG = "mac"
+elseif vim.fn.has("unix") == 1 then
+  CONFIG = "linux"
+else
+  print("Unsupported system")
+end
 
 local on_attach = function()
   -- With `hotcodereplace = 'auto' the debug adapter will try to apply code changes
@@ -19,63 +30,58 @@ local on_attach = function()
   require("jdtls.dap").setup_dap_main_class_configs()
 end
 
-local is_file_exist = function(path)
-  local f = io.open(path, 'r')
-  return f ~= nil and io.close(f)
-end
+local bundles = {}
+local mason_path = vim.fn.glob(vim.fn.stdpath("data") .. "/mason/")
+vim.list_extend(bundles, vim.split(vim.fn.glob(mason_path .. "packages/java-test/extension/server/*.jar"), "\n"))
+vim.list_extend(
+  bundles,
+  vim.split(vim.fn.glob(mason_path ..
+    "packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-*.jar"), "\n")
+)
+-- print(vim.inspect(bundles))
 
-local get_lombok_javaagent = function()
-  local lombok_dir = '/opt/lombok-bin/lib/'
-  local lombok_versions = io.popen('ls -1 "' .. lombok_dir .. '" | sort -r')
-  if lombok_versions ~= nil then
-    local lb_i, lb_versions = 0, {}
-    for lb_version in lombok_versions:lines() do
-      lb_i = lb_i + 1
-      lb_versions[lb_i] = lb_version
-    end
-    lombok_versions:close()
-    if next(lb_versions) ~= nil then
-      local lombok_jar = fn.expand(string.format('%s%s/*.jar', lombok_dir, lb_versions[1]))
-      if is_file_exist(lombok_jar) then
-        return string.format('--jvm-arg=-javaagent:%s', lombok_jar)
-      end
-    end
-  end
-  return ''
-end
-
-local get_java_debug_jar = function()
-  local jdj_full_path = fn.expand(java_debug_jar)
-  if is_file_exist(jdj_full_path) then
-    return jdj_full_path
-  end
-  return ''
-end
-
-local get_cmd = function()
-  local cmd = {
-
-    -- 💀
-    'jdtls',
-  }
-
-  local lombok_javaagent = get_lombok_javaagent()
-  if (lombok_javaagent ~= '') then
-    table.insert(cmd, lombok_javaagent)
-  end
-
-  -- 💀
-  -- See `data directory configuration` section in the README
-  table.insert(cmd, '-data')
-  table.insert(cmd, workspace_dir)
-
-  return cmd
-end
-
+local extendedClientCapabilities = require("jdtls").extendedClientCapabilities
+extendedClientCapabilities.resolveAdditionalTextEditsSupport = true
 -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
 -- Watch out for the 💀, it indicates that you must adjust something.
 local config = {
-  cmd = get_cmd(),
+  cmd = {
+    -- 💀
+    "java", -- or '/path/to/java11_or_newer/bin/java'
+    -- depends on if `java` is in your $PATH env variable and if it points to the right version.
+
+    "-Declipse.application=org.eclipse.jdt.ls.core.id1",
+    "-Dosgi.bundles.defaultStartLevel=4",
+    "-Declipse.product=org.eclipse.jdt.ls.core.product",
+    "-Dlog.protocol=true",
+    "-Dlog.level=ALL",
+    "-javaagent:" .. lombok_jar,
+    "-Xms1g",
+    "--add-modules=ALL-SYSTEM",
+    "--add-opens",
+    "java.base/java.util=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.lang=ALL-UNNAMED",
+
+    -- 💀
+    "-jar",
+    equinox_jar,
+    -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                       ^^^^^^^^^^^^^^
+    -- Must point to the                                                     Change this to
+    -- eclipse.jdt.ls installation                                           the actual version
+
+    -- 💀
+    "-configuration",
+    home_dir .. "/.local/share/nvim/mason/packages/jdtls/config_" .. CONFIG,
+    -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        ^^^^^^
+    -- Must point to the                      Change to one of `linux`, `win` or `mac`
+    -- eclipse.jdt.ls installation            Depending on your system.
+
+    -- 💀
+    -- See `data directory configuration` section in the README
+    "-data",
+    workspace_dir,
+  },
 
   -- 💀
   -- This is the default if not provided, you can remove it. Or adjust as needed.
@@ -89,10 +95,6 @@ local config = {
     ['java.settings.url'] = java_settings_url,
     java = {
       codeGeneration = {
-        hashCodeEquals = {
-          useInstanceof = true,
-          useJava7Objects = false
-        },
         toString = {
           codeStyle = "STRING_BUILDER_CHAINED"
         },
@@ -142,9 +144,12 @@ local config = {
   -- If you don't plan on using the debugger or other eclipse.jdt.ls plugins you can remove this
   init_options = {
     bundles = {
-      get_java_debug_jar()
+      bundles = bundles,
+      extendedClientCapabilities = extendedClientCapabilities,
     }
   },
+
+  capabilities = vim.lsp.protocol.make_client_capabilities(),
 
   flags = {
     allow_incremental_sync = true,
